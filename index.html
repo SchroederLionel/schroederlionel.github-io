@@ -11,7 +11,9 @@
       href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
     />
     <!--================================ SWIPER CSS =================================-->
-    <link rel="stylesheet" href="" />
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <!--================================ CSS =================================-->
     <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -39,10 +41,19 @@
                 <i class="uil uil-file-alt nav__icon"></i> Skills
               </a>
             </li>
-           
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i> Qualifications
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i> My work
+              </a>
+            </li>
             <li class="nav__item">
               <a href="#contact" class="nav__link">
-                <i class="uil uil-message nav__icon"></i> Contactme
+                <i class="uil uil-message nav__icon"></i> Contact Me
               </a>
             </li>
           </ul>
@@ -315,8 +326,7 @@
       </section>
 
       <!--================================ Qualification =================================-->
-
-      <section class="qualification section">
+      <section class="qualification section" id="qualification">
         <h2 class="section__title">Qualification</h2>
         <span class="section__subtitle">My journey</span>
 
@@ -454,7 +464,59 @@
           </div>
         </div>
       </section>
-      
+      <!--================================ Projects =================================-->
+      <section class="contat section" id="projects">
+        <h2 class="section__title">My work</h2>
+        <span class="section__subtitle">Projects</span>
+
+        <div class="projects__container container grid">
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="title">SGF to Katago</div>
+              
+                
+                  <div class="features">
+                    <p>Allows to convert a SGF Smart Game Format to a JsonObject and send it to a KataGo backend as a post request. The KataGo response will be stored in a file.</p>
+                  </div><!--/features-->
+                  <div class="btn__container">
+                  <a href="https://github.com/SchroederLionel/SGF_TO_KatagoAPI.git" target="_blank"class="button">Check it out</a>
+                </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="title">KataGo Frontend</div>
+              
+                
+                  <div class="features">
+                    <p>Webpage which allows you to send an SGF file to a KataGo backend service and evaluate it. By creating graphs and also checking if it is a game containing a cheater. However, the cheat detection part is currently not working.</p>
+                  </div><!--/features-->
+                  <div class="btn__container">
+                  <a href="https://github.com/SchroederLionel/Catch-Me-FrontEnd.git" target="_blank"class="button">Check it out</a>
+                </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="card">
+                  <div class="title">Covid Simulator</div>
+                  <div class="features">
+                    <p>This program allows you to simulate how long it takes to do PCR test for X amount of people.</p>
+                  </div><!--/features-->
+                <div class="btn__container">
+                  <a href="https://github.com/SchroederLionel/Covi-19_Extended.git" target="_blank"class="button">Check it out</a>
+                </div>
+                  
+                
+                </div>
+              </div>
+              
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+       </section>
        <!--================================ Contact ME =================================-->
 
        <section class="contat section" id="contact">
@@ -508,7 +570,7 @@
               <a href="#qualification" class="footer__link">Qualifications</a>
             </li>
             <li>
-              <a href="#portfolio" class="footer__link">Portfolio</a>
+              <a href="#projects" class="footer__link">Projects</a>
             </li>
             <li>
               <a href="#contact" class="footer__link">ContactMe</a>
@@ -521,7 +583,7 @@
     <!--================================ SCROLL TOP =================================-->
 
     <!--================================ SWIPER  JS =================================-->
-    <script src=""></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <!--================================ MAIN JS =================================-->
     <script src="assets/js/main.js"></script>
   </body>
